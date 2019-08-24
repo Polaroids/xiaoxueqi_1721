@@ -1,5 +1,7 @@
 package com.buaa.springBoot.tool;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class RetResult<T> {
 
     public int code;

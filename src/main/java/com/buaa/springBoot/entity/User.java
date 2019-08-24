@@ -1,5 +1,6 @@
 package com.buaa.springBoot.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -18,6 +19,8 @@ public class User {
     private String token;
     private long lastOperationTime;
 
+    //返回数据时过滤Id和password
+    @JsonIgnore
     public String getId() {
         return _id;
     }
@@ -33,6 +36,7 @@ public class User {
     public String getPassword() {
         return password;
     }
+    @JsonIgnore
     public void setPassword(String password) {
         this.password = password;
     }

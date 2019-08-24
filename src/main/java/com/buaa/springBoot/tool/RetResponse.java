@@ -1,7 +1,5 @@
 package com.buaa.springBoot.tool;
 
-import com.buaa.springBoot.tool.RetCode;
-import com.buaa.springBoot.tool.RetResult;
 
 public class RetResponse {
 
